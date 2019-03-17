@@ -11,6 +11,10 @@ close_contact_button.addEventListener("click", function() {
   contact_form.classList.remove("backdrop--active");
 })
 
+contact_form.addEventListener("click", function(evt) {
+  contact_form.classList.remove("backdrop--active");
+})
+
 var user_button = document.querySelector("#user-button");
 var user_form = document.querySelector("#user-form");
 var close_user_button = document.querySelector("#close-user-button");
@@ -20,5 +24,9 @@ user_button.addEventListener("click", function() {
 })
 
 close_user_button.addEventListener("click", function() {
+  user_form.classList.remove("backdrop--active");
+})
+
+user_form.addEventListener("click", function(evt) {
   user_form.classList.remove("backdrop--active");
 })

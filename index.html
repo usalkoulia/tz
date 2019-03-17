@@ -15,7 +15,7 @@
       <div class="header__wrapper centering">
 
         <div class="header__item navigation">
-          <button class="navigation__toggle" type="button" name="button"></button>
+          <button class="navigation__toggle" type="button" name="button" aria-label="Дополнительное меню"></button>
         </div>
 
         <div class="header__item header__item--logo">
@@ -23,7 +23,7 @@
         </div>
 
         <div class="header__item select">
-          <select class="select__list" name="city">
+          <select class="select__list" name="city" aria-label="Выбрать город">
             <option>Москва</option>
             <option>Москва</option>
             <option>Москва</option>
@@ -61,10 +61,10 @@
             </div>
             <form class="contact-form__body" action="index.html" method="post">
               <label class="contact-form__label contact-form__label--user">
-                <input class="contact-form__input input input--small input--primary input--with-icon" type="text" name="user-name" placeholder="Введите имя">
+                <input class="contact-form__input input input--small input--primary input--with-icon" type="text" name="user-name" placeholder="Введите имя" aria-label="Введите ваше имя">
               </label>
               <label class="contact-form__label contact-form__label--phone">
-                <input class="contact-form__input input input--small input--primary input--with-icon" type="text" name="user-phone" placeholder="Введите телефон">
+                <input class="contact-form__input input input--small input--primary input--with-icon" type="text" name="user-phone" placeholder="Введите телефон" aria-label="Введите ваш номер телефона">
               </label>
               <button class="button button--secondary" type="submit" name="button" id="contact-button">Отправить заявку</button>
             </form>
@@ -92,10 +92,10 @@
           <form class="contact-form__body" action="index.html" method="post">
             <div class="contact-form__wrapper">
               <label class="contact-form__label contact-form__label--user">
-                <input class="contact-form__input input input--large input--primary input--with-icon" type="text" name="user-name" placeholder="Введите имя">
+                <input class="contact-form__input input input--large input--primary input--with-icon" type="text" name="user-name" placeholder="Введите имя" aria-label="Введите ваше имя">
               </label>
               <label class="contact-form__label contact-form__label--phone">
-                <input class="contact-form__input input input--large input--primary input--with-icon" type="tel" name="user-phone" placeholder="Введите телефон">
+                <input class="contact-form__input input input--large input--primary input--with-icon" type="tel" name="user-phone" placeholder="Введите телефон" aria-label="Введите ваш номер телефона">
               </label>
             </div>
             <button class="button button--third" type="submit" name="button">Отправить</button>
@@ -115,10 +115,10 @@
           </div>
           <form class="user-form__body" action="index.html" method="post">
             <label class="user-form__label">
-              <input class="user-form__input input input--small input--secondary" type="text" name="login" placeholder="Логин (номер договра):">
+              <input class="user-form__input input input--small input--secondary" type="text" name="login" placeholder="Логин (номер договра):" aria-label="Введите логин или номер договора">
             </label>
             <label class="user-form__label">
-              <input class="user-form__input input input--small input--secondary" type="text" name="password" placeholder="Пароль:">
+              <input class="user-form__input input input--small input--secondary" type="text" name="password" placeholder="Пароль:" aria-label="Введите пароль">
             </label>
             <button class="button button--fourth" type="submit" name="button">Вход</button>
           </form>
