@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Ремонт, дизайн, строительство">
+    <title>ВиллСтрой</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body class="body">
+
+    <header class="header">
+      <div class="header__wrapper centering">
+
+        <div class="header__item navigation">
+          <button class="navigation__toggle" type="button" name="button"></button>
+        </div>
+
+        <div class="header__item header__item--logo">
+          <img src="img/logo.png" alt="Логотип строительной компании ВиллСтрой">
+        </div>
+
+        <div class="header__item select">
+          <select class="select__list" name="city">
+            <option>Москва</option>
+            <option>Москва</option>
+            <option>Москва</option>
+          </select>
+        </div>
+
+        <div class="header__item">
+          <p class="text text--small">«Москва-Сити», Пресненская набережная 12</p>
+          <p class="text text--small">Написать нам:
+            <a class="link link--small link--primary-color" href="mailto:info@will-stroy.ru" aria-label="Email строительной компании ВиллСтрой">info@will-stroy.ru</a>
+          </p>
+        </div>
+
+        <div class="header__item">
+          <a class="link link--large link--secondary-color" href="tel:+71234567890">+7 (123) 456 78 90</a>
+          <button class="header__link link link--large link--primary-color" type="button" name="button">Обратный звонок</button>
+        </div>
+
+        <div class="header__item">
+          <button class="button button--primary" type="button" name="button" id="user-button">Личный кабинет</button>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <div class="hero__wrapper centering">
+          <h1 class="hero__title title title--large">Ремонт квартир. Дизайн интерьеров. Строительство домов.</h1>
+          <div class="contact-form contact-form--hero">
+            <div class="contact-form__header">
+              <h2 class="contact-form__title title title--medium">Связаться с нами прямо сейчас!</h2>
+              <p class="contact-form__text">Наши специалисты ответят на все интересующие Вас вопросы. Мы свяжемся с Вами в течение 3х минут</p>
+            </div>
+            <form class="contact-form__body" action="index.html" method="post">
+              <label class="contact-form__label contact-form__label--user">
+                <input class="contact-form__input input input--small input--primary input--with-icon" type="text" name="user-name" placeholder="Введите имя">
+              </label>
+              <label class="contact-form__label contact-form__label--phone">
+                <input class="contact-form__input input input--small input--primary input--with-icon" type="text" name="user-phone" placeholder="Введите телефон">
+              </label>
+              <button class="button button--secondary" type="submit" name="button" id="contact-button">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__wrapper centering">
+          <h2 class="visually-hidden">Преимущества строительной коспании Вилл Строй</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--specialists">Опытные специалисты в штате</li>
+            <li class="advantages__item advantages__item--guarantee">Гарантия на работы до 5 лет</li>
+            <li class="advantages__item advantages__item--payment">Оплата в рассрочку или в кредит</li>
+            <li class="advantages__item advantages__item--technology">Проверенные технологии строительсва и ремонта</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="backdrop" id="contact-form">
+        <div class="contact-form contact-form--popup">
+          <div class="contact-form__header">
+            <h2 class="contact-form__title title">ОСТАВЬТЕ ЗАЯВКУ И МЫ БЕСПЛАТНО ПЕРЕЗВОНИМ ВАМ</h2>
+          </div>
+          <form class="contact-form__body" action="index.html" method="post">
+            <div class="contact-form__wrapper">
+              <label class="contact-form__label contact-form__label--user">
+                <input class="contact-form__input input input--large input--primary input--with-icon" type="text" name="user-name" placeholder="Введите имя">
+              </label>
+              <label class="contact-form__label contact-form__label--phone">
+                <input class="contact-form__input input input--large input--primary input--with-icon" type="tel" name="user-phone" placeholder="Введите телефон">
+              </label>
+            </div>
+            <button class="button button--third" type="submit" name="button">Отправить</button>
+          </form>
+          <div class="contact-form__footer">
+            <p class="contact-form__note">* Оставляя заявку Вы даете согласие на обработку своих персональных данных.</p>
+              <button class="button close-button" type="button" name="button" aria-label="Закрыть окно" id="close-contact-button"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="backdrop" id="user-form">
+        <div class="user-form">
+          <div class="user-form__header">
+            <h2 class="user-form__title title title--medium">Ваш <br> Личный кабинет</h2>
+            <p class="user-form__text">Вход возможен клиентам, которые заключили договор</p>
+          </div>
+          <form class="user-form__body" action="index.html" method="post">
+            <label class="user-form__label">
+              <input class="user-form__input input input--small input--secondary" type="text" name="login" placeholder="Логин (номер договра):">
+            </label>
+            <label class="user-form__label">
+              <input class="user-form__input input input--small input--secondary" type="text" name="password" placeholder="Пароль:">
+            </label>
+            <button class="button button--fourth" type="submit" name="button">Вход</button>
+          </form>
+          <div class="user-form__footer">
+            <button class="user-form__button button" type="button" name="button" aria-label="Закрыть окно" id="close-user-button"></button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+  </body>
