@@ -269,10 +269,6 @@
   margin-left: -30px;
 }
 
-.header__link {
-  display: block;
-}
-
 /* ========================================================================== */
 .hero {
   background-image: url("../img/hero.jpg");
